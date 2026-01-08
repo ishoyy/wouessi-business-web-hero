@@ -1,0 +1,7 @@
+{
+  email {env.CADDY_EMAIL}
+}
+{env.DOMAIN} {
+  encode gzip
+  reverse_proxy businesswebhero:3000
+}

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F1F3F5"/>
+      <stop offset="1" stop-color="#EAF3FF"/>
+    </linearGradient>
+    <linearGradient id="acc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1F33"/>
+      <stop offset="1" stop-color="#1C7ED6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="900" fill="url(#bg)"/>
+  <circle cx="300" cy="300" r="220" fill="url(#acc)" opacity="0.18"/>
+  <circle cx="1100" cy="620" r="260" fill="url(#acc)" opacity="0.14"/>
+  <rect x="420" y="250" width="720" height="420" rx="36" fill="#fff" stroke="#C3C6C9"/>
+  <rect x="470" y="310" width="620" height="24" rx="12" fill="#E3E3E4"/>
+  <rect x="470" y="360" width="540" height="24" rx="12" fill="#E3E3E4"/>
+  <rect x="470" y="410" width="460" height="24" rx="12" fill="#E3E3E4"/>
+  <rect x="470" y="470" width="300" height="54" rx="18" fill="#1C7ED6" opacity="0.9"/>
+  <text x="520" y="506" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#fff">Call to action</text>
+  <text x="60" y="840" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0B1F33">Professional website foundation</text>
+</svg>

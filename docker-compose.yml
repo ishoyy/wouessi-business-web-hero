@@ -1,0 +1,21 @@
+services:
+  businesswebhero:
+    build: .
+    restart: unless-stopped
+    env_file: [.env]
+    volumes:
+      - ./data:/app/data
+    networks: [web]
+  caddy:
+    image: caddy:2
+    restart: unless-stopped
+    ports: ["80:80","443:443"]
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
+      - caddy_config:/config
+    networks: [web]
+networks: { web: {} }
+volumes:
+  caddy_data: {}
+  caddy_config: {}

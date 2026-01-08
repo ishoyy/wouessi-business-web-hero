@@ -1,0 +1,23 @@
+{
+  "name": "businesswebhero",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "export:leads": "node scripts/export-leads.js"
+  },
+  "dependencies": {
+    "next": "14.2.5",
+    "next-intl": "3.22.0",
+    "nodemailer": "6.9.15",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "25.0.3",
+    "@types/react": "19.2.7",
+    "typescript": "5.9.3"
+  }
+}
