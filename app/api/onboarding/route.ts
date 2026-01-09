@@ -33,7 +33,8 @@ export async function POST(req: Request){
     const folder = path.join(dataDir,'onboarding', onboardingId);
     ensureDir(folder);
 
-    async function saveFile(field:string, f: any){
+    // changed: use a const function expression (allowed in strict mode)
+    const saveFile = async (field:string, f: any) => {
       if(!f || typeof f.arrayBuffer !== 'function') return;
       const ab = await f.arrayBuffer();
       const buf = Buffer.from(ab);

@@ -8,7 +8,7 @@ function ok(req: Request){
 }
 
 export async function GET(req: Request){
-  if(!ok(req)) return NextResponse.json({{error:'unauthorized'}},{{status:401}});
+  if(!ok(req)) return NextResponse.json({error:'unauthorized'},{status:401});
   const p = path.join(process.cwd(),'data','onboarding.json');
   if(!fs.existsSync(p)) return NextResponse.json([]);
   try{
